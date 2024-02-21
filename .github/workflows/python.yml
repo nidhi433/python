@@ -1,0 +1,9 @@
+commands:
+  - name: Install Python packages
+    command: python -m pip install -r requirements.txt
+
+  - name: Make migrations
+    command: python manage.py makemigrations
+
+  - name: Migrate database
+    command: python manage.py migrate
